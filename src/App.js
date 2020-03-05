@@ -20,6 +20,7 @@ export default function App() {
         console.log('fetching data');
         const response = await fetch(
           'https://infinite-river-80908.herokuapp.com/api/index'
+          //'http://localhost:8000/api/index'
         );
         const data = await response.json();
         const indexByDate = data.dates.map((date, i) => ({
