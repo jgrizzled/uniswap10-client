@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 // global app styles
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 
   * {
     box-sizing: border-box;

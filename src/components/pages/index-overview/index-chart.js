@@ -12,11 +12,10 @@ import {
 } from 'recharts';
 import { useMedia } from 'react-use';
 
-import Card from 'styled-tags/card';
+import Card from 'components/common/card.styled';
 
 const Container = styled.div`
-  display: grid;
-  grid-area: 'chart';
+  grid-area: chart;
 `;
 
 const Title = styled.h1`
@@ -33,20 +32,12 @@ export default function IndexChart(props) {
           <LineChart data={props.data}>
             <Line
               type='monotone'
-              dataKey='indexETH'
+              dataKey='index'
               stroke='#8884d8'
               strokeWidth={2}
               dot={false}
             />
-            <Line
-              type='monotone'
-              dataKey='indexUSD'
-              stroke='#AF4FAC'
-              strokeWidth={2}
-              dot={false}
-            />
             <CartesianGrid stroke='#ccc' />
-            {/*<XAxis dataKey='date' tickFormatter={monthTickFormatter} />*/}
             <XAxis
               tickLine={false}
               axisLine={false}

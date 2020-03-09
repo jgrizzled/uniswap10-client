@@ -1,19 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from 'styled-tags/card';
+import Card from 'components/common/card.styled';
 
 const Container = styled.div`
-  display: grid;
-  grid-area: 'index-value';
+  grid-area: index-change;
 `;
 
-export default function IndexValue() {
+export default function IndexChange({ change }) {
   return (
     <Container>
       <Card>
         <center>
-          <h1>Current Value</h1>
-          <p>1.5</p>
+          <h1>24h Change</h1>
+          <p>{change.toFixed(2)}%</p>
         </center>
       </Card>
     </Container>

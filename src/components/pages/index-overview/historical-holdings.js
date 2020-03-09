@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from 'styled-tags/card';
+import Card from 'components/common/card.styled';
 import moment from 'moment';
 import randomColor from 'randomcolor';
 import {
@@ -15,8 +15,7 @@ import {
 import { useMedia } from 'react-use';
 
 const Container = styled.div`
-  display: grid;
-  grid-area: 'historical-holdings';
+  grid-area: historical-holdings;
 `;
 
 const Title = styled.h1`
@@ -50,7 +49,7 @@ export default function CurrentHoldings(props) {
               axisLine={true}
               tickLine={false}
               interval='preserveStartEnd'
-              tickFormatter={tick => tick * 100 + '%'}
+              tickFormatter={tick => parseInt(tick * 100) + '%'}
               minTickGap={5}
             />
             <Tooltip />
@@ -64,9 +63,11 @@ export default function CurrentHoldings(props) {
                     stackId='1'
                     stroke={color}
                     fill={color}
+                    key={k}
                   />
                 );
               }
+              return null;
             })}
           </AreaChart>
         </ResponsiveContainer>

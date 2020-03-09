@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from 'styled-tags/card';
+import Card from 'components/common/card.styled';
 
 const Container = styled.div`
-  display: grid;
-  grid-area: 'current-holdings';
+  grid-area: current-holdings;
 `;
 
 const Title = styled.h1`
@@ -23,11 +22,17 @@ const HoldingsList = styled.ol`
   }
 `;
 
-export default function CurrentHoldings(props) {
+export default function CurrentHoldings({ holdings, tokens }) {
   const currentHoldings = [];
-  for (const k of Object.keys(props.data)) {
+  for (const k of Object.keys(holdings)) {
     if (k === 'date') continue;
-    currentHoldings.push({ name: k, value: Number(props.data[k]) });
+    const { symbol, iconURL, address } = tokens.find(t => t.symbol === k);
+    currentHoldings.push({
+      symbol,
+      value: Number(holdings[k]),
+      iconURL,
+      address
+    });
   }
   currentHoldings.sort((a, b) => b.value - a.value);
   return (
@@ -36,9 +41,14 @@ export default function CurrentHoldings(props) {
         <Title>Current Holdings</Title>
         <HoldingsContainer>
           <HoldingsList>
-            {currentHoldings.map(h => (
-              <li>
-                {h.name}: {h.value * 100}%
+            {currentHoldings.map((h, i) => (
+              <li key={i}>
+                <img src={h.iconURL} height='16px' />
+                &nbsp;
+                <a href={`https://uniswap.info/token/${h.address}`}>
+                  {h.symbol}
+                </a>
+                : {parseInt(h.value * 100)}%
               </li>
             ))}
           </HoldingsList>

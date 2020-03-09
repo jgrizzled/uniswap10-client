@@ -1,19 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from 'styled-tags/card';
+import Card from 'components/common/card.styled';
 
 const Container = styled.div`
-  display: grid;
-  grid-area: 'index-change';
+  grid-area: index-return;
 `;
 
-export default function IndexChange() {
+export default function IndexReturn({ value }) {
   return (
     <Container>
       <Card>
         <center>
-          <h1>24h Change</h1>
-          <p>+1%</p>
+          <h1>Total Return</h1>
+          <p>{((value - 1) * 100).toFixed(2)}%</p>
         </center>
       </Card>
     </Container>

@@ -1,34 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
-  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: ${props => props.theme.color.primary};
-  color: ${props => props.theme.color.onPrimary};
-`;
+  background-color: ${({ theme }) => theme.color.primary};
 
-const Menu = styled.span`
-  position: absolute;
-  margin: 1rem;
-  font-size: 2rem;
-`;
-
-const Title = styled.h1`
-  margin: 1rem auto;
-  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  color: ${({ theme }) => theme.color.onPrimary};
+  padding: 0.5rem;
+  p {
+    margin: 0;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  a {
+    color: ${({ theme }) => theme.color.onPrimary};
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <Menu>
-        <FontAwesomeIcon icon={faBars} />
-      </Menu>
-      <Title>Uniswap 10</Title>
+      <h1>
+        <Link to='/'>Uniswap 10</Link>
+      </h1>
+      <p>The S&P500 of Uniswap</p>
     </HeaderContainer>
   );
 }

@@ -19,15 +19,9 @@ export default {
     large: '2rem',
     extraLarge: '4rem'
   },
-  breakpoint: {
-    medium: '600px',
-    large: '1000px'
-  },
   color: {
-    primary: '#6200EE',
-    primaryVariant: '#3700B3',
-    secondary: '#03DAC6',
-    secondaryVariant: '#018786',
+    primary: '#3E3FBF',
+    primaryLight: '#5B5CCA',
     background: '#FFFFFF',
     surface: '#f2f2f2',
     error: '#B00020',
@@ -37,5 +31,8 @@ export default {
     onSurface: '#000000',
     onError: '#FFFFFF',
     link: '#1890ff'
+  },
+  breakpoint: {
+    desktop: '40em'
   }
 };
