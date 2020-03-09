@@ -8,6 +8,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: ${({ theme }) => theme.color.primaryLight};
   height: 100vh;
   width: 100vw;
@@ -20,7 +21,7 @@ const StyledMenu = styled.nav`
   z-index: 1;
 
   @media (min-width: ${({ theme }) => theme.breakpoint.desktop}) {
-    width: 100%;
+    width: 20rem;
   }
 
   a {
