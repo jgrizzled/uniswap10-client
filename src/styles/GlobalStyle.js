@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 // global app styles
 export default createGlobalStyle`
-
-
   * {
     box-sizing: border-box;
   }

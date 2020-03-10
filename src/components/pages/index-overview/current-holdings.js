@@ -19,6 +19,8 @@ const HoldingsList = styled.ol`
   padding: 0;
   li {
     width: 100%;
+    margin: 0.5rem;
+    width: 10rem;
   }
 `;
 

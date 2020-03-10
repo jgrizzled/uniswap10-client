@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
 import Card from 'components/common/card.styled';
 import moment from 'moment';
 import randomColor from 'randomcolor';
@@ -23,7 +23,8 @@ const Title = styled.h1`
 `;
 
 export default function CurrentHoldings(props) {
-  const isNotMobile = useMedia('(max-width: 40em)');
+  const theme = useContext(ThemeContext);
+  const isNotMobile = useMedia(`(min-width: ${theme.breakpoint.desktop})`);
   return (
     <Container>
       <Card>

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
 import moment from 'moment';
 import {
   ResponsiveContainer,
@@ -23,7 +23,8 @@ const Title = styled.h1`
 `;
 
 export default function IndexChart(props) {
-  const isNotMobile = useMedia('(max-width: 40em)');
+  const theme = useContext(ThemeContext);
+  const isNotMobile = useMedia(`(min-width: ${theme.breakpoint.desktop})`);
   return (
     <Container>
       <Card>
@@ -33,7 +34,7 @@ export default function IndexChart(props) {
             <Line
               type='monotone'
               dataKey='index'
-              stroke='#8884d8'
+              stroke={theme.color.primary}
               strokeWidth={2}
               dot={false}
             />

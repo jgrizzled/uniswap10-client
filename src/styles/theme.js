@@ -22,8 +22,8 @@ export default {
   color: {
     primary: '#3E3FBF',
     primaryLight: '#5B5CCA',
-    background: '#FFFFFF',
-    surface: '#f2f2f2',
+    background: '#f2f2f2',
+    surface: '#ffffff',
     error: '#B00020',
     onPrimary: '#FFFFFF',
     onSecondary: '#000000',
