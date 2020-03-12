@@ -9,7 +9,7 @@ import IndexReturn from './index-return';
 const Container = styled.div`
   width: 100%;
   display: grid;
-  padding: 0 1rem;
+  padding: 0 0.25rem;
   grid-template-areas:
     'index-return'
     'index-change'
@@ -18,6 +18,7 @@ const Container = styled.div`
     'historical-holdings';
   grid-template-columns: 100%;
   @media (min-width: ${({ theme }) => theme.breakpoint.desktop}) {
+    padding: 0 1rem;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       'index-return index-change'
@@ -37,9 +38,9 @@ export default function IndexOverview({ data }) {
     <Container>
       <IndexReturn value={currentValue} />
       <IndexChange change={change} />
-      <IndexChart data={indexByDate} />
+      <IndexChart indexByDate={indexByDate} />
       <CurrentHoldings holdings={currentHoldings} tokens={tokens} />
-      <HistoricalHoldings data={holdingsByDate} />
+      <HistoricalHoldings holdingsByDate={holdingsByDate} />
     </Container>
   );
 }

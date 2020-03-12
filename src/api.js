@@ -1,5 +1,4 @@
 import { API_URL } from 'config';
-import { tokenIconURL } from 'token-icons';
 
 export const fetchIndexData = async ({
   currency,
@@ -22,9 +21,5 @@ export const fetchIndexData = async ({
       return acc;
     }, {})
   }));
-  const tokens = data.tokens.map(t => ({
-    ...t,
-    iconURL: tokenIconURL(t.address)
-  }));
-  return { indexByDate, holdingsByDate, tokens };
+  return { indexByDate, holdingsByDate, tokens: data.tokens };
 };

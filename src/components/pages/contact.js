@@ -17,7 +17,9 @@ export default function Contact() {
           Made by Justin Greene
           <ul>
             <li>
-              <a href='https://jgrizzled.github.io/portfolio'>Portfolio</a>
+              <a href='https://jgrizzled.github.io/portfolio' target='_blank'>
+                Portfolio
+              </a>
             </li>
             <li>
               <a href='https://github.com/jgrizzled' target='_blank'>

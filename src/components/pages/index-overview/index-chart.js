@@ -22,15 +22,15 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-export default function IndexChart(props) {
+export default function IndexChart({ indexByDate }) {
   const theme = useContext(ThemeContext);
   const isNotMobile = useMedia(`(min-width: ${theme.breakpoint.desktop})`);
   return (
     <Container>
       <Card>
         <Title>Index</Title>
-        <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 12}>
-          <LineChart data={props.data}>
+        <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 44}>
+          <LineChart data={indexByDate}>
             <Line
               type='monotone'
               dataKey='index'
@@ -43,7 +43,7 @@ export default function IndexChart(props) {
               tickLine={false}
               axisLine={false}
               interval='preserveStartEnd'
-              tickMargin={14}
+              tickMargin={isNotMobile ? 16 : 8}
               minTickGap={116}
               tickFormatter={tick => moment(tick).format('MMM DD')}
               dataKey='date'
@@ -52,7 +52,7 @@ export default function IndexChart(props) {
               hide={false}
               type='number'
               domain={['dataMin', 'dataMax']}
-              tickMargin={16}
+              tickMargin={isNotMobile ? 16 : 8}
               orientation='left'
               tickFormatter={tick => tick.toFixed(1)}
               axisLine={true}

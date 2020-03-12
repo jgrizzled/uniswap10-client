@@ -15,7 +15,10 @@ export default function About() {
       <Container>
         <p>
           Uniswap 10 is an index of the top 10 cryptocurrencies trading on
-          Uniswap. The index indicates market growth of decentralized assets.
+          <a href='https://uniswap.io/' target='_blank'>
+            Uniswap
+          </a>
+          . The value indicates market growth of decentralized assets.
           <ul>
             <li>Assets are weighted by 1-yr average liquidity and volume.</li>
             <li>

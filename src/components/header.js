@@ -31,10 +31,10 @@ const HeaderContainer = styled.header`
 export default function Header() {
   return (
     <HeaderContainer>
-      <h1>
-        <Link to='/'>Uniswap 10</Link>
-      </h1>
-      <p>The S&P500 of Uniswap</p>
+      <Link to='/'>
+        <h1>Uniswap 10</h1>
+        <p>Top Token Index</p>
+      </Link>
     </HeaderContainer>
   );
 }

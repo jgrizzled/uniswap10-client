@@ -22,21 +22,21 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-export default function CurrentHoldings(props) {
+export default function HistoricalHoldings({ holdingsByDate }) {
   const theme = useContext(ThemeContext);
   const isNotMobile = useMedia(`(min-width: ${theme.breakpoint.desktop})`);
   return (
     <Container>
       <Card>
         <Title>Historical Holdings</Title>
-        <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 12}>
-          <AreaChart data={props.data}>
+        <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 44}>
+          <AreaChart data={holdingsByDate}>
             <CartesianGrid strokeDasharray='3 3' />
             <XAxis
               tickLine={false}
               axisLine={false}
               interval='preserveStartEnd'
-              tickMargin={14}
+              tickMargin={isNotMobile ? 16 : 8}
               minTickGap={116}
               tickFormatter={tick => moment(tick).format('MMM DD')}
               dataKey='date'
@@ -45,7 +45,7 @@ export default function CurrentHoldings(props) {
               hide={false}
               type='number'
               domain={[0, 1]}
-              tickMargin={16}
+              tickMargin={isNotMobile ? 16 : 8}
               orientation='left'
               axisLine={true}
               tickLine={false}
@@ -54,7 +54,7 @@ export default function CurrentHoldings(props) {
               minTickGap={5}
             />
             <Tooltip />
-            {Object.keys(props.data[0]).map(k => {
+            {Object.keys(holdingsByDate[0]).map(k => {
               if (k !== 'date') {
                 const color = randomColor();
                 return (
