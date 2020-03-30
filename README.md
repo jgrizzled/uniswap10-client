@@ -6,6 +6,8 @@ Front end for Uniswap10 - a customizeable index of liquid cryptoasets traded on 
 
 Technologies: React, HTML5, CSS3
 
+[Server Repository](https://github.com/jgrizzled/uniswap10-server)
+
 ## Install
 
 `yarn install`
