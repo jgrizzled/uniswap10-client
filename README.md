@@ -10,7 +10,7 @@ Technologies: React, HTML5, CSS3
 
 ## Install
 
-`yarn install`
+`yarn install` or `npm install`
 
 Specify development API URL (defaults to http://localhost:8000):
 
@@ -29,10 +29,10 @@ Specify production API URL for Zeit.co:
 
 ## Scripts
 
-Develop: `yarn start`
+Develop: `yarn start` or `npm run start`
 
-Build: `yarn build`
+Build: `yarn build` or `npm run build`
 
-Deploy to Zeit: `yarn deploy`
+Deploy to Zeit: `yarn deploy` or `npm run deploy`
 
-Test: `yarn test`
+Test: `yarn test` or `npm run test`
