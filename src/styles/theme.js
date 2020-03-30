@@ -20,8 +20,8 @@ export default {
     extraLarge: '4rem'
   },
   color: {
-    primary: '#3E3FBF',
-    primaryLight: '#5B5CCA',
+    primary: '#2373CC',
+    primaryLight: '#4989D3',
     background: '#f2f2f2',
     surface: '#ffffff',
     error: '#B00020',
