@@ -3,7 +3,7 @@
 exports[`renders as expected 1`] = `
 Array [
   <header
-    className="sc-AxjAm hOddLW"
+    className="sc-AxjAm OAJFQ"
   >
     <a
       href="/"
@@ -21,7 +21,7 @@ Array [
     className="sc-fznZeY iUxidv"
   >
     <button
-      className="sc-fznyAO jZQKlq"
+      className="sc-fznyAO jKRlFy"
       onClick={[Function]}
       open={false}
     >
@@ -44,7 +44,7 @@ Array [
       </svg>
     </button>
     <nav
-      className="sc-fznKkj hccPeE"
+      className="sc-fznKkj frbkHs"
       open={false}
     >
       <a
