@@ -17,17 +17,29 @@ export default function Contact() {
           Made by Justin Greene
           <ul>
             <li>
-              <a href='https://jgrizzled.github.io/portfolio' target='_blank'>
+              <a
+                href='https://jgrizzled.github.io/portfolio'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 Portfolio
               </a>
             </li>
             <li>
-              <a href='https://github.com/jgrizzled' target='_blank'>
+              <a
+                href='https://github.com/jgrizzled'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 Github
               </a>
             </li>
             <li>
-              <a href='mailto:justin.greene5@gmail.com' target='_blank'>
+              <a
+                href='mailto:justin.greene5@gmail.com'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 Email
               </a>
             </li>

@@ -32,7 +32,7 @@ export default function IndexChart({ indexByDate }) {
         <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 44}>
           <LineChart data={indexByDate}>
             <Line
-              type='monotone'
+              type='monotoneX'
               dataKey='index'
               stroke={theme.color.primary}
               strokeWidth={2}

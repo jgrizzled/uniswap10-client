@@ -3,8 +3,13 @@ import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
 import App from '../app';
 import theme from 'styles/theme';
+import { BrowserRouter } from 'react-router-dom';
 
-const app = <App themes={theme} />;
+const app = (
+  <BrowserRouter>
+    <App themes={theme} />
+  </BrowserRouter>
+);
 
 // smoke test
 it('renders without crashing', () => {

@@ -1,9 +1,8 @@
 // Main app component
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import styled, { ThemeProvider } from 'styled-components';
-import moment from 'moment';
+import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'styles/GlobalStyle';
 import theme from 'styles/theme';
 import Header from 'components/header';
@@ -23,7 +22,7 @@ export default function App() {
     rebalancePeriod: '30'
   });
 
-  // fetch index data
+  // fetch index data on new settings
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,6 +37,7 @@ export default function App() {
       }
     };
     fetchData();
+    // eslint-disable-next-line
   }, [JSON.stringify(indexSettings)]);
 
   return (

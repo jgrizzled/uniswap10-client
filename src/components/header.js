@@ -14,6 +14,7 @@ const HeaderContainer = styled.header`
   color: ${({ theme }) => theme.color.onPrimary};
   padding: 0.5rem;
   p {
+    text-align: center;
     margin: 0;
   }
   h1 {

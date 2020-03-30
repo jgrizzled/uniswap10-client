@@ -14,8 +14,12 @@ export default function About() {
       <Title>About</Title>
       <Container>
         <p>
-          Uniswap 10 is an index of the top 10 cryptocurrencies trading on
-          <a href='https://uniswap.io/' target='_blank'>
+          Uniswap 10 is an index of the top 10 cryptocurrencies trading on&nbsp;
+          <a
+            href='https://uniswap.io/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Uniswap
           </a>
           . The value indicates market growth of decentralized assets.

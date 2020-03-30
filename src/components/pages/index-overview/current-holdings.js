@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from 'components/common/card.styled';
-import { tokenIconUrl } from 'use-token/src/utils';
+import { tokenIconUrl } from 'tokenIconUrl';
 
 const Container = styled.div`
   grid-area: current-holdings;
