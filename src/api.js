@@ -6,7 +6,7 @@ export const fetchIndexData = async ({
   liquidityWeight
 }) => {
   const response = await fetch(
-    `${API_URL}?c=${currency}&rp=${rebalancePeriod}&lw=${liquidityWeight}`
+    `${API_URL}/api/index?c=${currency}&rp=${rebalancePeriod}&lw=${liquidityWeight}`
   );
   const data = await response.json();
   if (data.error) throw new Error(data.error);
