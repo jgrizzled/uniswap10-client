@@ -31,7 +31,7 @@ const HoldingsList = styled.ol`
 export default function CurrentHoldings({ holdings, tokens }) {
   const currentHoldings = [];
   for (const k of Object.keys(holdings)) {
-    if (k === 'date') continue;
+    if (k === 'date' || holdings[k] <= 0) continue;
     const { symbol, address } = tokens.find(t => t.symbol === k);
     currentHoldings.push({
       symbol,

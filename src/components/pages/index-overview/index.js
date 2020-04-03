@@ -33,7 +33,7 @@ export default function IndexOverview({ data }) {
   const currentHoldings = holdingsByDate[holdingsByDate.length - 1];
   const currentValue = indexByDate[indexByDate.length - 1].index;
   const lastValue = indexByDate[indexByDate.length - 2].index;
-  const change = ((currentValue - lastValue) / lastValue) * 100;
+  const change = (currentValue - lastValue) / lastValue;
   return (
     <Container>
       <IndexReturn value={currentValue} />

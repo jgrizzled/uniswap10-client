@@ -18,10 +18,10 @@ Array [
     </a>
   </header>,
   <div
-    className="sc-fzokOt llziFA"
+    className="sc-fzqBZW eYXjTt"
   >
     <button
-      className="sc-fznKkj dSBXQr"
+      className="sc-fznZeY funFef"
       onClick={[Function]}
       open={false}
     >
@@ -44,7 +44,7 @@ Array [
       </svg>
     </button>
     <nav
-      className="sc-fznZeY jZnpjg"
+      className="sc-fzokOt jNmukv"
       open={false}
     >
       <a
@@ -86,7 +86,7 @@ Array [
     </nav>
   </div>,
   <h2
-    className="sc-fznyAO jHUhWB"
+    className="sc-fznKkj jYwXyZ"
   >
     Loading
   </h2>,

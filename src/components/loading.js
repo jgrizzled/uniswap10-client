@@ -16,7 +16,7 @@ const Container = styled.h2`
 
   @keyframes ellipsis {
     to {
-      width: 1.25em;
+      width: 1.2em;
     }
   }
 
