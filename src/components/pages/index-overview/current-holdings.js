@@ -1,14 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from 'components/common/card.styled';
+import Title from 'components/common/title.styled';
 import { tokenIconUrl } from 'tokenIconUrl';
 
 const Container = styled.div`
   grid-area: current-holdings;
-`;
-
-const Title = styled.h1`
-  text-align: center;
 `;
 
 const HoldingsContainer = styled.div`
@@ -32,11 +29,11 @@ export default function CurrentHoldings({ holdings, tokens }) {
   const currentHoldings = [];
   for (const k of Object.keys(holdings)) {
     if (k === 'date' || holdings[k] <= 0) continue;
-    const { symbol, address } = tokens.find(t => t.symbol === k);
+    const { symbol, address } = tokens.find((t) => t.symbol === k);
     currentHoldings.push({
       symbol,
       value: Number(holdings[k]),
-      address
+      address,
     });
   }
   currentHoldings.sort((a, b) => b.value - a.value);

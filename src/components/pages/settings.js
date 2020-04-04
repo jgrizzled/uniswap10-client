@@ -51,14 +51,14 @@ export default function Settings({ settings, setSettings }) {
   const [liquidityWeight, setLiquidityWeight] = useState(
     settings.liquidityWeight
   );
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSettings({
       currency,
       rebalancePeriod,
-      liquidityWeight
+      liquidityWeight,
     });
-    history.push('/');
+    history.push('/#chart');
   };
   return (
     <Card>
@@ -73,7 +73,7 @@ export default function Settings({ settings, setSettings }) {
                 name='currency'
                 value='eth'
                 checked={currency === 'eth'}
-                onChange={e => setCurrency(e.target.value)}
+                onChange={(e) => setCurrency(e.target.value)}
               />
               ETH&nbsp;
             </label>
@@ -83,7 +83,7 @@ export default function Settings({ settings, setSettings }) {
                 name='currency'
                 value='usd'
                 checked={currency === 'usd'}
-                onChange={e => setCurrency(e.target.value)}
+                onChange={(e) => setCurrency(e.target.value)}
               />
               USD&nbsp;
             </label>
@@ -96,7 +96,7 @@ export default function Settings({ settings, setSettings }) {
                 name='rebalancePeriod'
                 value='7'
                 checked={rebalancePeriod === '7'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                onChange={(e) => setRebalancePeriod(e.target.value)}
               />
               Weekly&nbsp;
             </label>
@@ -106,7 +106,7 @@ export default function Settings({ settings, setSettings }) {
                 name='rebalancePeriod'
                 value='30'
                 checked={rebalancePeriod === '30'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                onChange={(e) => setRebalancePeriod(e.target.value)}
               />
               Monthly&nbsp;
             </label>
@@ -116,7 +116,7 @@ export default function Settings({ settings, setSettings }) {
                 name='rebalancePeriod'
                 value='90'
                 checked={rebalancePeriod === '90'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                onChange={(e) => setRebalancePeriod(e.target.value)}
               />
               Quarterly&nbsp;
             </label>
@@ -129,7 +129,7 @@ export default function Settings({ settings, setSettings }) {
                 name='liquidityWeight'
                 value='1'
                 checked={liquidityWeight === '1'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                onChange={(e) => setLiquidityWeight(e.target.value)}
               />
               Liquidity&nbsp;
             </label>
@@ -139,7 +139,7 @@ export default function Settings({ settings, setSettings }) {
                 name='liquidityWeight'
                 value='0.5'
                 checked={liquidityWeight === '0.5'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                onChange={(e) => setLiquidityWeight(e.target.value)}
               />
               Liquidity and volume&nbsp;
             </label>
@@ -149,7 +149,7 @@ export default function Settings({ settings, setSettings }) {
                 name='liquidityWeight'
                 value='0'
                 checked={liquidityWeight === '0'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                onChange={(e) => setLiquidityWeight(e.target.value)}
               />
               Volume&nbsp;
             </label>

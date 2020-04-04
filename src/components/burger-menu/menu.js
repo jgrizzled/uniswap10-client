@@ -61,12 +61,12 @@ export default function Menu({ open, setOpen }) {
           Settings
         </Link>
       )}
-      {pathname !== '/about' && (
-        <Link to='/about' onClick={() => setOpen(false)}>
-          <span role='img' aria-label='about'>
+      {pathname !== '/faq' && (
+        <Link to='/faq' onClick={() => setOpen(false)}>
+          <span role='img' aria-label='faq'>
             &#x1f914;
           </span>
-          About
+          FAQ
         </Link>
       )}
       {pathname !== '/contact' && (
@@ -82,5 +82,5 @@ export default function Menu({ open, setOpen }) {
 }
 
 Menu.propTypes = {
-  open: propTypes.bool.isRequired
+  open: propTypes.bool.isRequired,
 };

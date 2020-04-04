@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const BurgerButton = styled.button`
   position: relative;
-  top: 0.5rem;
+  top: 0.1rem;
   left: 5vw;
   display: flex;
   flex-direction: column;
@@ -44,5 +44,5 @@ export default function Burger({ open, setOpen }) {
 }
 Burger.propTypes = {
   open: propTypes.bool.isRequired,
-  setOpen: propTypes.func.isRequired
+  setOpen: propTypes.func.isRequired,
 };

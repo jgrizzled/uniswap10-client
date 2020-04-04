@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import Card from 'components/common/card.styled';
 import moment from 'moment';
 import randomColor from 'randomcolor';
 import {
@@ -10,16 +9,15 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
 } from 'recharts';
 import { useMedia } from 'react-use';
 
+import Card from 'components/common/card.styled';
+import Title from 'components/common/title.styled';
+
 const Container = styled.div`
   grid-area: historical-holdings;
-`;
-
-const Title = styled.h1`
-  text-align: center;
 `;
 
 export default function HistoricalHoldings({ holdingsByDate }) {
@@ -38,7 +36,7 @@ export default function HistoricalHoldings({ holdingsByDate }) {
               interval='preserveStartEnd'
               tickMargin={isNotMobile ? 16 : 8}
               minTickGap={116}
-              tickFormatter={tick => moment(tick).format('MMM DD')}
+              tickFormatter={(tick) => moment(tick).format('MMM DD')}
               dataKey='date'
             />
             <YAxis
@@ -50,11 +48,11 @@ export default function HistoricalHoldings({ holdingsByDate }) {
               axisLine={true}
               tickLine={false}
               interval='preserveStartEnd'
-              tickFormatter={tick => parseInt(tick * 100) + '%'}
+              tickFormatter={(tick) => parseInt(tick * 100) + '%'}
               minTickGap={5}
             />
             <Tooltip />
-            {Object.keys(holdingsByDate[0]).map(k => {
+            {Object.keys(holdingsByDate[0]).map((k) => {
               if (k !== 'date') {
                 const color = randomColor();
                 return (

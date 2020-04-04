@@ -34,7 +34,6 @@ export default function Header() {
     <HeaderContainer>
       <Link to='/'>
         <h1>Uniswap 10</h1>
-        <p>Top Token Index</p>
       </Link>
     </HeaderContainer>
   );

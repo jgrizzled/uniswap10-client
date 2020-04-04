@@ -9,7 +9,7 @@ import Header from 'components/header';
 import IndexOverview from 'components/pages/index-overview';
 import Loading from 'components/loading';
 import BurgerMenu from 'components/burger-menu';
-import About from 'components/pages/about';
+import FAQ from 'components/pages/faq';
 import Contact from 'components/pages/contact';
 import Settings from 'components/pages/settings';
 import { fetchIndexData } from 'api';
@@ -19,18 +19,16 @@ export default function App() {
   const [indexSettings, setIndexSettings] = useState({
     currency: 'usd',
     liquidityWeight: '0.5',
-    rebalancePeriod: '30'
+    rebalancePeriod: '30',
   });
 
   // fetch index data on new settings
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log('fetching data');
         const { indexByDate, holdingsByDate, tokens } = await fetchIndexData(
           indexSettings
         );
-        console.log('got data of length ' + indexByDate.length);
         setIndexData({ indexByDate, holdingsByDate, tokens });
       } catch (e) {
         console.error(e);
@@ -49,8 +47,8 @@ export default function App() {
         <Route path='/settings'>
           <Settings settings={indexSettings} setSettings={setIndexSettings} />
         </Route>
-        <Route path='/about'>
-          <About />
+        <Route path='/faq'>
+          <FAQ />
         </Route>
         <Route path='/contact'>
           <Contact />

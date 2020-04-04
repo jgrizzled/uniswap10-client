@@ -12,16 +12,13 @@ Array [
       <h1>
         Uniswap 10
       </h1>
-      <p>
-        Top Token Index
-      </p>
     </a>
   </header>,
   <div
-    className="sc-fzqBZW eYXjTt"
+    className="sc-fzoyAV gRtasW"
   >
     <button
-      className="sc-fznZeY funFef"
+      className="sc-fzqBZW befhGh"
       onClick={[Function]}
       open={false}
     >
@@ -44,7 +41,7 @@ Array [
       </svg>
     </button>
     <nav
-      className="sc-fzokOt jNmukv"
+      className="sc-fzqNJr cneoWL"
       open={false}
     >
       <a
@@ -60,16 +57,16 @@ Array [
         Settings
       </a>
       <a
-        href="/about"
+        href="/faq"
         onClick={[Function]}
       >
         <span
-          aria-label="about"
+          aria-label="faq"
           role="img"
         >
           🤔
         </span>
-        About
+        FAQ
       </a>
       <a
         href="/contact"
@@ -86,7 +83,7 @@ Array [
     </nav>
   </div>,
   <h2
-    className="sc-fznKkj jYwXyZ"
+    className="sc-fzokOt emxQnu"
   >
     Loading
   </h2>,
