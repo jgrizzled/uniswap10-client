@@ -12,6 +12,7 @@ import {
   Tooltip,
 } from 'recharts';
 import { useMedia } from 'react-use';
+import { round } from 'portfolio-tools';
 
 import Card from 'components/common/card.styled';
 import Title from 'components/common/title.styled';
@@ -51,7 +52,7 @@ export default function HistoricalHoldings({ holdingsByDate }) {
               tickFormatter={(tick) => parseInt(tick * 100) + '%'}
               minTickGap={5}
             />
-            <Tooltip formatter={(val) => val.toFixed(2)} />
+            <Tooltip formatter={(val) => round(val * 100, 2) + '%'} />
             {Object.keys(holdingsByDate[0]).map((k) => {
               if (k !== 'date') {
                 const color = randomColor();

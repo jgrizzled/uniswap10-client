@@ -2,6 +2,10 @@
 
 Front end for Uniswap10 - a customizeable index of liquid cryptoasets traded on [Uniswap](https://uniswap.io).
 
+<p align="center">
+  <img src="https://github.com/jgrizzled/portfolio/raw/master/img/uniswap10-ss-desktop.png" width="350" alt="Uniswap10 screenshot">
+</p>
+
 [Live Demo](https://uniswap10.now.sh)
 
 Technologies: React, HTML5, CSS3

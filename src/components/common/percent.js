@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
 
+import { round } from 'portfolio-tools';
+
 const Colored = styled.span`
   color: ${({ color }) => color};
 `;
@@ -12,7 +14,7 @@ export default function Percent({ number }) {
   return (
     <Colored color={color}>
       {number > 0 && '+'}
-      {(number * 100).toFixed(2)}%
+      {round(number * 100, 2)}%
     </Colored>
   );
 }

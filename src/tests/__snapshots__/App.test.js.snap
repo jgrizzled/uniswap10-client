@@ -1,91 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders as expected 1`] = `
-Array [
-  <header
-    className="sc-AxjAm OAJFQ"
+<BrowserRouter>
+  <ThemeProvider
+    theme={
+      Object {
+        "breakpoint": Object {
+          "desktop": "40em",
+        },
+        "color": Object {
+          "background": "#f2f2f2",
+          "error": "#B00020",
+          "link": "#1890ff",
+          "onBackground": "#000000",
+          "onError": "#FFFFFF",
+          "onPrimary": "#FFFFFF",
+          "onSecondary": "#000000",
+          "onSurface": "#000000",
+          "primary": "#2373CC",
+          "primaryLight": "#4989D3",
+          "surface": "#ffffff",
+        },
+        "font": Object {
+          "main": "'Roboto', sans-serif;",
+        },
+        "fontSize": Object {
+          "large": "1.25rem",
+          "normal": "1rem",
+          "small": "0.85rem",
+          "xLarge": "1.5rem",
+          "xxLarge": "2rem",
+        },
+        "fontWeight": Object {
+          "bold": "700",
+          "normal": "400",
+        },
+        "space": Object {
+          "extraLarge": "4rem",
+          "large": "2rem",
+          "medium": "1rem",
+          "small": "0.5rem",
+        },
+      }
+    }
   >
-    <a
-      href="/"
-      onClick={[Function]}
-    >
-      <h1>
-        Uniswap 10
-      </h1>
-    </a>
-  </header>,
-  <div
-    className="sc-fzoyAV gRtasW"
-  >
-    <button
-      className="sc-fzqBZW befhGh"
-      onClick={[Function]}
-      open={false}
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-bars fa-w-14 "
-        data-icon="bars"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 448 512"
-        xmlns="http://www.w3.org/2000/svg"
+    <Memo(GlobalStyleComponent) />
+    <Header />
+    <BurgerMenu />
+    <Switch>
+      <Route
+        path="/settings"
       >
-        <path
-          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-          fill="currentColor"
-          style={Object {}}
+        <Settings
+          setSettings={[Function]}
+          settings={
+            Object {
+              "currency": "usd",
+              "liquidityWeight": "0.5",
+              "rebalancePeriod": "30",
+            }
+          }
         />
-      </svg>
-    </button>
-    <nav
-      className="sc-fzqNJr cneoWL"
-      open={false}
-    >
-      <a
-        href="/settings"
-        onClick={[Function]}
+      </Route>
+      <Route
+        path="/faq"
       >
-        <span
-          aria-label="settings"
-          role="img"
-        >
-          🛠
-        </span>
-        Settings
-      </a>
-      <a
-        href="/faq"
-        onClick={[Function]}
+        <FAQ />
+      </Route>
+      <Route
+        path="/contact"
       >
-        <span
-          aria-label="faq"
-          role="img"
-        >
-          🤔
-        </span>
-        FAQ
-      </a>
-      <a
-        href="/contact"
-        onClick={[Function]}
-      >
-        <span
-          aria-label="contact"
-          role="img"
-        >
-          📩
-        </span>
-        Contact
-      </a>
-    </nav>
-  </div>,
-  <h2
-    className="sc-fzokOt emxQnu"
-  >
-    Loading
-  </h2>,
-]
+        <Contact />
+      </Route>
+      <Route>
+        <Loading />
+      </Route>
+    </Switch>
+  </ThemeProvider>
+</BrowserRouter>
 `;

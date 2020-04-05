@@ -1,10 +1,10 @@
 import { API_URL } from 'config';
 
-export const fetchIndexData = async ({
+export default async function fetchIndexData({
   currency,
   rebalancePeriod,
   liquidityWeight,
-}) => {
+}) {
   const response = await fetch(
     `${API_URL}/api/index?c=${currency}&rp=${rebalancePeriod}&lw=${liquidityWeight}`
   );
@@ -22,4 +22,4 @@ export const fetchIndexData = async ({
     }, {}),
   }));
   return { indexByDate, holdingsByDate, tokens: data.tokens };
-};
+}

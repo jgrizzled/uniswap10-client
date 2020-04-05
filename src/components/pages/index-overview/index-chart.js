@@ -12,6 +12,7 @@ import {
   Tooltip,
 } from 'recharts';
 import { useMedia } from 'react-use';
+import { round } from 'portfolio-tools';
 
 import Card from 'components/common/card.styled';
 import Percent from 'components/common/percent';
@@ -150,7 +151,7 @@ export default function IndexChart({ indexByDate }) {
               interval='preserveStartEnd'
               minTickGap={5}
             />
-            <Tooltip formatter={(val) => val.toFixed(2)} />
+            <Tooltip formatter={(val) => round(val, 2)} />
           </LineChart>
         </ResponsiveContainer>
       </Card>

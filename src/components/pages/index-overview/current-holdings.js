@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Card from 'components/common/card.styled';
 import Title from 'components/common/title.styled';
 import { tokenIconUrl } from 'tokenIconUrl';
+import { round } from 'portfolio-tools';
 
 const Container = styled.div`
   grid-area: current-holdings;
@@ -58,7 +60,7 @@ export default function CurrentHoldings({ holdings, tokens }) {
                   >
                     {h.symbol}
                   </a>
-                  : {parseInt(h.value * 100)}%
+                  : {round(h.value * 100, 0)}%
                 </span>
               </li>
             ))}

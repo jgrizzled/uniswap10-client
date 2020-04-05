@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Card from 'components/common/card.styled';
 import Title from 'components/common/title.styled';
+import { round } from 'portfolio-tools';
 
 const Container = styled.div`
   grid-area: index-return;
@@ -18,7 +20,7 @@ export default function CurrentValue({ value }) {
     <Container>
       <Card>
         <Title>Current Value</Title>
-        <p>{value.toFixed(2)}</p>
+        <p>{round(value, 2)}</p>
       </Card>
     </Container>
   );
