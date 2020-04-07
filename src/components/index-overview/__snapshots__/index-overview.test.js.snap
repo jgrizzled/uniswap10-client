@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <IndexReturn />
+  <CurrentValue
+    value={101}
+  />
+  <Change
+    change={0.01}
+  />
+  <IndexChart
+    indexByDate={
+      Array [
+        Object {
+          "date": "2020-01-01",
+          "index": 100,
+        },
+        Object {
+          "date": "2020-01-02",
+          "index": 101,
+        },
+      ]
+    }
+  />
+  <CurrentHoldings
+    holdings={
+      Object {
+        "MKR": 0.5,
+        "ZRX": 0.5,
+        "date": "2020-01-01",
+      }
+    }
+    tokens={
+      Array [
+        Object {
+          "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+          "name": "Maker",
+          "symbol": "MKR",
+        },
+        Object {
+          "address": "0xe41d2489571d322189246dafa5ebde1f4699f498",
+          "name": "0x Protocol Token",
+          "symbol": "ZRX",
+        },
+      ]
+    }
+  />
+  <HistoricalHoldings
+    holdingsByDate={
+      Array [
+        Object {
+          "MKR": 0.5,
+          "ZRX": 0.5,
+          "date": "2020-01-01",
+        },
+        Object {
+          "MKR": 0.5,
+          "ZRX": 0.5,
+          "date": "2020-01-01",
+        },
+      ]
+    }
+  />
+</styled.div>
+`;

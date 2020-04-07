@@ -4,13 +4,6 @@ import { useOnClickOutside } from 'hooks';
 import Burger from './burger';
 import Menu from './menu';
 
-const BurgerContainer = styled.div`
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-`;
-
 export default function BurgerMenu() {
   const [burgerOpen, setBurgerOpen] = useState(false);
   const node = useRef();
@@ -22,3 +15,10 @@ export default function BurgerMenu() {
     </BurgerContainer>
   );
 }
+
+const BurgerContainer = styled.div`
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+`;

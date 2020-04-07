@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<Settings
+  setSettings={[MockFunction]}
+  settings={
+    Object {
+      "currency": "usd",
+      "liquidityWeight": "0.5",
+      "rebalancePeriod": "30",
+    }
+  }
+>
+  <styled.div>
+    <div
+      className="sc-AxjAm qfvsW"
+    >
+      <styled.h2>
+        <h2
+          className="sc-AxirZ jDYAnS"
+        >
+          Settings
+        </h2>
+      </styled.h2>
+      <styled.div>
+        <div
+          className="sc-AxiKw fAKbNN"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <fieldset>
+              <legend>
+                Currency: 
+              </legend>
+              <label>
+                <input
+                  checked={false}
+                  name="currency"
+                  onChange={[Function]}
+                  type="radio"
+                  value="eth"
+                />
+                ETH 
+              </label>
+              <label>
+                <input
+                  checked={true}
+                  name="currency"
+                  onChange={[Function]}
+                  type="radio"
+                  value="usd"
+                />
+                USD 
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Rebalance Period: 
+              </legend>
+              <label>
+                <input
+                  checked={false}
+                  name="rebalancePeriod"
+                  onChange={[Function]}
+                  type="radio"
+                  value="7"
+                />
+                Weekly 
+              </label>
+              <label>
+                <input
+                  checked={true}
+                  name="rebalancePeriod"
+                  onChange={[Function]}
+                  type="radio"
+                  value="30"
+                />
+                Monthly 
+              </label>
+              <label>
+                <input
+                  checked={false}
+                  name="rebalancePeriod"
+                  onChange={[Function]}
+                  type="radio"
+                  value="90"
+                />
+                Quarterly 
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Asset Weighting: 
+              </legend>
+              <label>
+                <input
+                  checked={false}
+                  name="liquidityWeight"
+                  onChange={[Function]}
+                  type="radio"
+                  value="1"
+                />
+                Liquidity 
+              </label>
+              <label>
+                <input
+                  checked={true}
+                  name="liquidityWeight"
+                  onChange={[Function]}
+                  type="radio"
+                  value="0.5"
+                />
+                Liquidity and volume 
+              </label>
+              <label>
+                <input
+                  checked={false}
+                  name="liquidityWeight"
+                  onChange={[Function]}
+                  type="radio"
+                  value="0"
+                />
+                Volume 
+              </label>
+            </fieldset>
+            <button
+              type="submit"
+            >
+              Apply
+            </button>
+          </form>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Settings>
+`;

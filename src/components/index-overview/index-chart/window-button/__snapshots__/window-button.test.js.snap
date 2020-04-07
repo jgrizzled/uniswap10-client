@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.label
+  checked={false}
+>
+  <styled.input
+    checked={false}
+    onChange={[MockFunction]}
+  />
+  <span />
+</styled.label>
+`;

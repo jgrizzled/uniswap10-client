@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h2>
+      24h Change
+    </styled.h2>
+    <Percent
+      number={1}
+    />
+  </styled.div>
+</styled.div>
+`;

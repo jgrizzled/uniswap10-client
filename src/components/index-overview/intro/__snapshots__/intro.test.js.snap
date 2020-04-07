@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <div>
+    <h2>
+      Track the top trading tokens on Uniswap
+    </h2>
+    Uniswap10 is an index of the top 10 traded tokens on 
+    <a
+      href="https://uniswap.io/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Uniswap
+    </a>
+    .
+  </div>
+  <div>
+    <h2>
+      Invest in liquid DeFi assets
+    </h2>
+    Tokens are ranked by market activity. 
+    <Link
+      to="/faq"
+    >
+      Learn more
+    </Link>
+    .
+  </div>
+  <div>
+    <h2>
+      Customize it!
+    </h2>
+    Try out the 
+    <Link
+      to="/settings"
+    >
+      settings
+    </Link>
+    .
+  </div>
+</styled.div>
+`;

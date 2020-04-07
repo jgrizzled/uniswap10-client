@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<Menu
+  open={false}
+  setOpen={[MockFunction]}
+>
+  <styled.nav
+    open={false}
+  >
+    <nav
+      className="sc-AxjAm jODFpL"
+      open={false}
+    >
+      <Link
+        onClick={[Function]}
+        to="/settings"
+      >
+        <LinkAnchor
+          href="/settings"
+          navigate={[Function]}
+          onClick={[Function]}
+        >
+          <a
+            href="/settings"
+            onClick={[Function]}
+          >
+            <span
+              aria-label="settings"
+              role="img"
+            >
+              🛠
+            </span>
+            Settings
+          </a>
+        </LinkAnchor>
+      </Link>
+      <Link
+        onClick={[Function]}
+        to="/faq"
+      >
+        <LinkAnchor
+          href="/faq"
+          navigate={[Function]}
+          onClick={[Function]}
+        >
+          <a
+            href="/faq"
+            onClick={[Function]}
+          >
+            <span
+              aria-label="faq"
+              role="img"
+            >
+              🤔
+            </span>
+            FAQ
+          </a>
+        </LinkAnchor>
+      </Link>
+      <Link
+        onClick={[Function]}
+        to="/contact"
+      >
+        <LinkAnchor
+          href="/contact"
+          navigate={[Function]}
+          onClick={[Function]}
+        >
+          <a
+            href="/contact"
+            onClick={[Function]}
+          >
+            <span
+              aria-label="contact"
+              role="img"
+            >
+              📩
+            </span>
+            Contact
+          </a>
+        </LinkAnchor>
+      </Link>
+    </nav>
+  </styled.nav>
+</Menu>
+`;

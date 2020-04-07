@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<IndexChart
+  indexByDate={
+    Array [
+      Object {
+        "date": "2020-01-01",
+        "index": 100,
+      },
+      Object {
+        "date": "2020-01-02",
+        "index": 101,
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-AxgMl kMOgMa"
+    >
+      <styled.div>
+        <div
+          className="sc-AxjAm qfvsW"
+        >
+          <styled.h2>
+            <h2
+              className="sc-AxiKw dxaXnq"
+            >
+              Index
+            </h2>
+          </styled.h2>
+          <styled.div>
+            <div
+              className="sc-AxheI jPecZZ"
+            >
+              <span>
+                Total Return:  
+                <Percent
+                  number={0.010000000000000009}
+                >
+                  <styled.span
+                    color="#74954F"
+                  >
+                    <span
+                      className="sc-AxirZ gacQIj"
+                      color="#74954F"
+                    >
+                      +
+                      1
+                      %
+                    </span>
+                  </styled.span>
+                </Percent>
+              </span>
+              <span>
+                <WindowButton
+                  checked={true}
+                  onChange={[Function]}
+                >
+                  <styled.label
+                    checked={true}
+                  >
+                    <label
+                      checked={true}
+                      className="sc-AxhUy jUBpCc"
+                    >
+                      <styled.input
+                        checked={true}
+                        onChange={[Function]}
+                      >
+                        <input
+                          checked={true}
+                          className="sc-AxhCb juCMVi"
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                      </styled.input>
+                      <span>
+                        All
+                      </span>
+                    </label>
+                  </styled.label>
+                </WindowButton>
+                <WindowButton
+                  checked={false}
+                  onChange={[Function]}
+                >
+                  <styled.label
+                    checked={false}
+                  >
+                    <label
+                      checked={false}
+                      className="sc-AxhUy gRAhDD"
+                    >
+                      <styled.input
+                        checked={false}
+                        onChange={[Function]}
+                      >
+                        <input
+                          checked={false}
+                          className="sc-AxhCb juCMVi"
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                      </styled.input>
+                      <span>
+                        1y
+                      </span>
+                    </label>
+                  </styled.label>
+                </WindowButton>
+                <WindowButton
+                  checked={false}
+                  onChange={[Function]}
+                >
+                  <styled.label
+                    checked={false}
+                  >
+                    <label
+                      checked={false}
+                      className="sc-AxhUy gRAhDD"
+                    >
+                      <styled.input
+                        checked={false}
+                        onChange={[Function]}
+                      >
+                        <input
+                          checked={false}
+                          className="sc-AxhCb juCMVi"
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                      </styled.input>
+                      <span>
+                        3m
+                      </span>
+                    </label>
+                  </styled.label>
+                </WindowButton>
+                <WindowButton
+                  checked={false}
+                  onChange={[Function]}
+                >
+                  <styled.label
+                    checked={false}
+                  >
+                    <label
+                      checked={false}
+                      className="sc-AxhUy gRAhDD"
+                    >
+                      <styled.input
+                        checked={false}
+                        onChange={[Function]}
+                      >
+                        <input
+                          checked={false}
+                          className="sc-AxhCb juCMVi"
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                      </styled.input>
+                      <span>
+                        1m
+                      </span>
+                    </label>
+                  </styled.label>
+                </WindowButton>
+              </span>
+            </div>
+          </styled.div>
+          <ResponsiveContainer
+            aspect={1.3636363636363635}
+            debounce={0}
+            height="100%"
+            width="100%"
+          >
+            <div
+              className="recharts-responsive-container"
+              id="undefined"
+              style={
+                Object {
+                  "height": "100%",
+                  "maxHeight": undefined,
+                  "minHeight": undefined,
+                  "minWidth": undefined,
+                  "width": "100%",
+                }
+              }
+            >
+              <LineChart
+                barCategoryGap="10%"
+                barGap={4}
+                data={
+                  Array [
+                    Object {
+                      "date": "2020-01-01",
+                      "index": 100,
+                    },
+                    Object {
+                      "date": "2020-01-02",
+                      "index": 101,
+                    },
+                  ]
+                }
+                height={0}
+                layout="horizontal"
+                margin={
+                  Object {
+                    "bottom": 5,
+                    "left": 5,
+                    "right": 5,
+                    "top": 5,
+                  }
+                }
+                reverseStackOrder={false}
+                stackOffset="none"
+                width={0}
+              />
+              <ResizeDetector
+                handleHeight={true}
+                handleWidth={true}
+                nodeType="div"
+                onResize={[Function]}
+                querySelector={null}
+                refreshRate={1000}
+                skipOnMount={false}
+                targetDomEl={null}
+              >
+                <ChildWrapper>
+                  <div />
+                </ChildWrapper>
+              </ResizeDetector>
+            </div>
+          </ResponsiveContainer>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</IndexChart>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h2>
+      Current Value
+    </styled.h2>
+    <p>
+      1
+    </p>
+  </styled.div>
+</styled.div>
+`;

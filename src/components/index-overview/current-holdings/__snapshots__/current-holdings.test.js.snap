@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h2>
+      Current Holdings
+    </styled.h2>
+    <styled.div>
+      <styled.ol>
+        <li
+          key="0"
+        >
+          <img
+            alt="MKR"
+            height="20px"
+            src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2/logo.png"
+          />
+           
+          <span>
+            <a
+              href="https://uniswap.info/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+              target="blank"
+            >
+              MKR
+            </a>
+            : 
+            50
+            %
+          </span>
+        </li>
+        <li
+          key="1"
+        >
+          <img
+            alt="ZRX"
+            height="20px"
+            src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xE41d2489571d322189246DaFA5ebDe1F4699F498/logo.png"
+          />
+           
+          <span>
+            <a
+              href="https://uniswap.info/token/0xe41d2489571d322189246dafa5ebde1f4699f498"
+              target="blank"
+            >
+              ZRX
+            </a>
+            : 
+            50
+            %
+          </span>
+        </li>
+      </styled.ol>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

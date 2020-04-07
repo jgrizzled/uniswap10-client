@@ -12,15 +12,15 @@ global.Enzyme = Enzyme;
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 
 import theme from 'styles/theme';
 global.theme = theme;
 
 global.Providers = (props) => (
-  <BrowserRouter>
+  <MemoryRouter initialEntries={['/']} initialIndex={0}>
     <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-  </BrowserRouter>
+  </MemoryRouter>
 );
 
 global.mockData = {

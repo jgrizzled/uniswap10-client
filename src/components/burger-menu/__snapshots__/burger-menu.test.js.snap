@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <Burger
+    open={false}
+    setOpen={[Function]}
+  />
+  <Menu
+    open={false}
+    setOpen={[Function]}
+  />
+</styled.div>
+`;

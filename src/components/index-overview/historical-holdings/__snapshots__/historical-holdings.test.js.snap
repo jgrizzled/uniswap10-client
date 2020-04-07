@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<HistoricalHoldings
+  holdingsByDate={
+    Array [
+      Object {
+        "MKR": 0.5,
+        "ZRX": 0.5,
+        "date": "2020-01-01",
+      },
+      Object {
+        "MKR": 0.5,
+        "ZRX": 0.5,
+        "date": "2020-01-01",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-AxiKw hgsICA"
+    >
+      <styled.div>
+        <div
+          className="sc-AxjAm qfvsW"
+        >
+          <styled.h2>
+            <h2
+              className="sc-AxirZ jDYAnS"
+            >
+              Historical Holdings
+            </h2>
+          </styled.h2>
+          <ResponsiveContainer
+            aspect={1.3636363636363635}
+            debounce={0}
+            height="100%"
+            width="100%"
+          >
+            <div
+              className="recharts-responsive-container"
+              id="undefined"
+              style={
+                Object {
+                  "height": "100%",
+                  "maxHeight": undefined,
+                  "minHeight": undefined,
+                  "minWidth": undefined,
+                  "width": "100%",
+                }
+              }
+            >
+              <AreaChart
+                barCategoryGap="10%"
+                barGap={4}
+                data={
+                  Array [
+                    Object {
+                      "MKR": 0.5,
+                      "ZRX": 0.5,
+                      "date": "2020-01-01",
+                    },
+                    Object {
+                      "MKR": 0.5,
+                      "ZRX": 0.5,
+                      "date": "2020-01-01",
+                    },
+                  ]
+                }
+                height={0}
+                layout="horizontal"
+                margin={
+                  Object {
+                    "bottom": 5,
+                    "left": 5,
+                    "right": 5,
+                    "top": 5,
+                  }
+                }
+                reverseStackOrder={false}
+                stackOffset="none"
+                width={0}
+              />
+              <ResizeDetector
+                handleHeight={true}
+                handleWidth={true}
+                nodeType="div"
+                onResize={[Function]}
+                querySelector={null}
+                refreshRate={1000}
+                skipOnMount={false}
+                targetDomEl={null}
+              >
+                <ChildWrapper>
+                  <div />
+                </ChildWrapper>
+              </ResizeDetector>
+            </div>
+          </ResponsiveContainer>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</HistoricalHoldings>
+`;
