@@ -1,4 +1,7 @@
+// index current holdings
+
 import React from 'react';
+import propTypes from 'prop-types';
 import { round } from 'portfolio-tools';
 
 import Card from 'components/common/card.styled';
@@ -10,11 +13,11 @@ export default function CurrentHoldings({ holdings, tokens }) {
   const currentHoldings = [];
   for (const k of Object.keys(holdings)) {
     if (k === 'date' || holdings[k] <= 0) continue;
-    const { symbol, address } = tokens.find((t) => t.symbol === k);
+    const { symbol, address } = tokens.find(t => t.symbol === k);
     currentHoldings.push({
       symbol,
       value: Number(holdings[k]),
-      address,
+      address
     });
   }
   currentHoldings.sort((a, b) => b.value - a.value);
@@ -49,3 +52,8 @@ export default function CurrentHoldings({ holdings, tokens }) {
     </Container>
   );
 }
+
+CurrentHoldings.propTypes = {
+  holdings: propTypes.object.isRequired,
+  tokens: propTypes.array.isRequired
+};

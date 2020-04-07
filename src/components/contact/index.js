@@ -1,3 +1,5 @@
+// contact section
+
 import React from 'react';
 import styled from 'styled-components';
 import Card from 'components/common/card.styled';

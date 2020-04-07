@@ -1,5 +1,8 @@
+// index value chart
+
 import React, { useContext, useState, useRef } from 'react';
-import { ThemeContext } from 'styled-components';
+import propTypes from 'prop-types';
+import styled, { ThemeContext } from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import moment from 'moment';
 import {
@@ -9,7 +12,7 @@ import {
   CartesianGrid,
   XAxis,
   YAxis,
-  Tooltip,
+  Tooltip
 } from 'recharts';
 import { useMedia } from 'react-use';
 import { round } from 'portfolio-tools';
@@ -17,9 +20,7 @@ import { round } from 'portfolio-tools';
 import Card from 'components/common/card.styled';
 import Percent from 'components/common/percent';
 import Title from 'components/common/title.styled';
-
-import WindowButton from './window-button';
-import { Container, ChartTop } from './styles';
+import ChartTop from 'components/common/chart-top';
 
 export default function IndexChart({ indexByDate }) {
   const [chartWindow, setChartWindow] = useState(null);
@@ -38,37 +39,9 @@ export default function IndexChart({ indexByDate }) {
     <Container ref={chartRef}>
       <Card>
         <Title>Index</Title>
-        <ChartTop>
-          <span>
-            Total Return:&nbsp;&nbsp;
-            <Percent number={totalReturn} />
-          </span>
-          <span>
-            <WindowButton
-              checked={!chartWindow}
-              onChange={() => setChartWindow(null)}
-            >
-              All
-            </WindowButton>
-            <WindowButton
-              checked={chartWindow === 365}
-              onChange={() => setChartWindow(365)}
-            >
-              1y
-            </WindowButton>
-            <WindowButton
-              checked={chartWindow === 90}
-              onChange={() => setChartWindow(90)}
-            >
-              3m
-            </WindowButton>
-            <WindowButton
-              checked={chartWindow === 30}
-              onChange={() => setChartWindow(30)}
-            >
-              1m
-            </WindowButton>
-          </span>
+        <ChartTop chartWindow={chartWindow} setChartWindow={setChartWindow}>
+          Total Return:&nbsp;&nbsp;
+          <Percent number={totalReturn} />
         </ChartTop>
         <ResponsiveContainer aspect={isNotMobile ? 60 / 22 : 60 / 44}>
           <LineChart data={windowedIndex}>
@@ -82,12 +55,13 @@ export default function IndexChart({ indexByDate }) {
             />
             <CartesianGrid stroke='#ccc' />
             <XAxis
+              dataKey='date'
               tickLine={false}
               axisLine={false}
               interval='preserveStartEnd'
               tickMargin={isNotMobile ? 16 : 8}
               minTickGap={116}
-              tickFormatter={(tick) => moment(tick).format('MMM DD')}
+              tickFormatter={tick => moment(tick).format('MMM DD')}
               dataKey='date'
             />
             <YAxis
@@ -96,16 +70,27 @@ export default function IndexChart({ indexByDate }) {
               domain={['dataMin', 'dataMax']}
               tickMargin={isNotMobile ? 16 : 8}
               orientation='left'
-              tickFormatter={(tick) => tick.toFixed(1)}
-              axisLine={true}
+              tickFormatter={tick => tick.toFixed(1)}
+              axisLine={false}
               tickLine={false}
               interval='preserveStartEnd'
-              minTickGap={5}
+              tickCount={5}
             />
-            <Tooltip formatter={(val) => round(val, 2)} />
+            <Tooltip
+              formatter={val => round(val, 2)}
+              labelFormatter={label => moment(label).format('MMM DD, YYYY')}
+            />
           </LineChart>
         </ResponsiveContainer>
       </Card>
     </Container>
   );
 }
+
+const Container = styled.div`
+  grid-area: chart;
+`;
+
+IndexChart.propTypes = {
+  indexByDate: propTypes.array.isRequired
+};

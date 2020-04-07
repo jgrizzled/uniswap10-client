@@ -1,5 +1,8 @@
+// format number as red/green percent
+
 import styled from 'styled-components';
 import React from 'react';
+import propTypes from 'prop-types';
 
 import { round } from 'portfolio-tools';
 
@@ -18,3 +21,7 @@ export default function Percent({ number }) {
 const Colored = styled.span`
   color: ${({ color }) => color};
 `;
+
+Percent.propTypes = {
+  number: propTypes.number.isRequired,
+};

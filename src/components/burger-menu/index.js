@@ -1,3 +1,5 @@
+// burger nav menu, slides in from left
+
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { useOnClickOutside } from 'hooks';

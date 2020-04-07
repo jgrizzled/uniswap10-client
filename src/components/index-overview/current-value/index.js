@@ -1,4 +1,7 @@
+// index current value
+
 import React from 'react';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 import { round } from 'portfolio-tools';
 
@@ -25,3 +28,7 @@ const Container = styled.div`
     padding: 0;
   }
 `;
+
+CurrentValue.propTypes = {
+  value: propTypes.number.isRequired
+};

@@ -1,4 +1,7 @@
+// index stats page
+
 import React from 'react';
+import propTypes from 'prop-types';
 
 import IndexChart from './index-chart';
 import CurrentHoldings from './current-holdings';
@@ -25,3 +28,11 @@ export default function IndexOverview({ data }) {
     </Container>
   );
 }
+
+IndexOverview.propTypes = {
+  data: propTypes.shape({
+    indexByDate: propTypes.array.isRequired,
+    holdingsByDate: propTypes.array.isRequired,
+    tokens: propTypes.array.isRequired
+  }).isRequired
+};
