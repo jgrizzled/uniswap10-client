@@ -10,8 +10,7 @@ export default function SplashPage({ sv }) {
     localStorage.getItem('visited') === 'true'
   );
   useEffect(() => {
-    //localStorage.setItem('visited', 'true');
-    console.log('set local storage');
+    localStorage.setItem('visited', 'true');
   }, []);
   if (visited) return null;
 
