@@ -1,17 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders as expected 1`] = `
-<styled.div>
-  <h1>
-    UNISWAP10
-  </h1>
-  <h2>
-    Track the top cryptocurrencies on the most popular decentralized exchange
-  </h2>
-  <button
-    onClick={[Function]}
-  >
-    GET STARTED
-  </button>
-</styled.div>
-`;
+exports[`renders as expected 1`] = `""`;
