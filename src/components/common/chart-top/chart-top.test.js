@@ -1,6 +1,6 @@
-import Intro from '.';
+import ChartTop from '.';
 
-const component = <Intro />;
+const component = <ChartTop chartWindow={null} setChartWindow={jest.fn()} />;
 
 // smoke test
 it('renders without crashing', async () => {

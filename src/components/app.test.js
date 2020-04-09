@@ -8,7 +8,7 @@ const app = <App themes={theme} />;
 it('renders without crashing', async () => {
   const div = document.createElement('div');
   await act(async () => {
-    ReactDOM.render(app, div);
+    ReactDOM.render(<Providers>{app}</Providers>, div);
   });
   ReactDOM.unmountComponentAtNode(div);
 });
@@ -17,8 +17,8 @@ it('renders without crashing', async () => {
 it('renders as expected', async () => {
   let wrapper;
   await act(async () => {
-    wrapper = Enzyme.shallow(app);
-    await new Promise((resolve) => setTimeout(resolve, 0));
+    wrapper = Enzyme.shallow(app, { wrappingComponent: Providers });
+    await new Promise(resolve => setTimeout(resolve, 0));
     wrapper.update();
   });
   expect(wrapper).toMatchSnapshot();

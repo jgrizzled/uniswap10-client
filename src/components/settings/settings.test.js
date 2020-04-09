@@ -2,15 +2,15 @@ import Settings from '.';
 
 const settings = {
   currency: 'usd',
-  liquidityWeight: '0.5',
-  rebalancePeriod: '30',
+  liquidityWeight: 0.5,
+  rebalancePeriod: 30
 };
 const component = <Settings settings={settings} setSettings={jest.fn()} />;
 
 // smoke test
 it('renders without crashing', async () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Providers>component</Providers>, div);
+  ReactDOM.render(<Providers>{component}</Providers>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 

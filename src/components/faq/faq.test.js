@@ -1,6 +1,6 @@
-import Intro from '.';
+import FAQ from '.';
 
-const component = <Intro />;
+const component = <FAQ />;
 
 // smoke test
 it('renders without crashing', async () => {

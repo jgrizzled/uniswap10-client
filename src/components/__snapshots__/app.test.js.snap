@@ -1,81 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders as expected 1`] = `
-<BrowserRouter>
-  <ThemeProvider
-    theme={
-      Object {
-        "breakpoint": Object {
-          "desktop": "40em",
-        },
-        "color": Object {
-          "background": "#f2f2f2",
-          "error": "#B00020",
-          "link": "#1890ff",
-          "onBackground": "#000000",
-          "onError": "#FFFFFF",
-          "onPrimary": "#FFFFFF",
-          "onSecondary": "#000000",
-          "onSurface": "#000000",
-          "primary": "#2373CC",
-          "primaryLight": "#4989D3",
-          "surface": "#ffffff",
-        },
-        "font": Object {
-          "main": "'Roboto', sans-serif;",
-        },
-        "fontSize": Object {
-          "large": "1.25rem",
-          "normal": "1rem",
-          "small": "0.85rem",
-          "xLarge": "1.5rem",
-          "xxLarge": "2rem",
-        },
-        "fontWeight": Object {
-          "bold": "700",
-          "normal": "400",
-        },
-        "space": Object {
-          "extraLarge": "4rem",
-          "large": "2rem",
-          "medium": "1rem",
-          "small": "0.5rem",
-        },
-      }
-    }
-  >
-    <Memo(GlobalStyleComponent) />
-    <Header />
-    <BurgerMenu />
-    <Switch>
-      <Route
-        path="/settings"
-      >
-        <Settings
-          setSettings={[Function]}
-          settings={
-            Object {
-              "currency": "usd",
-              "liquidityWeight": "0.5",
-              "rebalancePeriod": "30",
-            }
+<Fragment>
+  <SplashPage />
+  <Header />
+  <BurgerMenu />
+  <Switch>
+    <Route
+      path="/settings"
+    >
+      <Settings
+        setSettings={[Function]}
+        settings={
+          Object {
+            "currency": "usd",
+            "liquidityWeight": 0.5,
+            "rebalancePeriod": 30,
           }
-        />
-      </Route>
-      <Route
-        path="/faq"
-      >
-        <FAQ />
-      </Route>
-      <Route
-        path="/contact"
-      >
-        <Contact />
-      </Route>
-      <Route>
-        <Loading />
-      </Route>
-    </Switch>
-  </ThemeProvider>
-</BrowserRouter>
+        }
+      />
+    </Route>
+    <Route
+      path="/faq"
+    >
+      <FAQ />
+    </Route>
+    <Route
+      path="/contact"
+    >
+      <Contact />
+    </Route>
+    <Route>
+      <Loading />
+    </Route>
+  </Switch>
+  <Disclaimer />
+</Fragment>
 `;

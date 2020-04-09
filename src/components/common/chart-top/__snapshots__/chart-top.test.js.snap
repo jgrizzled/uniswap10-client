@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <span />
+  <span>
+    <WindowButton
+      checked={true}
+      onChange={[Function]}
+    >
+      All
+    </WindowButton>
+    <WindowButton
+      checked={false}
+      onChange={[Function]}
+    >
+      1y
+    </WindowButton>
+    <WindowButton
+      checked={false}
+      onChange={[Function]}
+    >
+      3m
+    </WindowButton>
+    <WindowButton
+      checked={false}
+      onChange={[Function]}
+    >
+      1m
+    </WindowButton>
+  </span>
+</styled.div>
+`;

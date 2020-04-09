@@ -6,8 +6,8 @@ exports[`renders as expected 1`] = `
   settings={
     Object {
       "currency": "usd",
-      "liquidityWeight": "0.5",
-      "rebalancePeriod": "30",
+      "liquidityWeight": 0.5,
+      "rebalancePeriod": 30,
     }
   }
 >
@@ -36,20 +36,16 @@ exports[`renders as expected 1`] = `
               <label>
                 <input
                   checked={false}
-                  name="currency"
                   onChange={[Function]}
                   type="radio"
-                  value="eth"
                 />
                 ETH 
               </label>
               <label>
                 <input
                   checked={true}
-                  name="currency"
                   onChange={[Function]}
                   type="radio"
-                  value="usd"
                 />
                 USD 
               </label>
@@ -61,30 +57,32 @@ exports[`renders as expected 1`] = `
               <label>
                 <input
                   checked={false}
-                  name="rebalancePeriod"
                   onChange={[Function]}
                   type="radio"
-                  value="7"
+                />
+                Daily 
+              </label>
+              <label>
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="radio"
                 />
                 Weekly 
               </label>
               <label>
                 <input
                   checked={true}
-                  name="rebalancePeriod"
                   onChange={[Function]}
                   type="radio"
-                  value="30"
                 />
                 Monthly 
               </label>
               <label>
                 <input
                   checked={false}
-                  name="rebalancePeriod"
                   onChange={[Function]}
                   type="radio"
-                  value="90"
                 />
                 Quarterly 
               </label>
@@ -96,30 +94,24 @@ exports[`renders as expected 1`] = `
               <label>
                 <input
                   checked={false}
-                  name="liquidityWeight"
                   onChange={[Function]}
                   type="radio"
-                  value="1"
                 />
                 Liquidity 
               </label>
               <label>
                 <input
                   checked={true}
-                  name="liquidityWeight"
                   onChange={[Function]}
                   type="radio"
-                  value="0.5"
                 />
                 Liquidity and volume 
               </label>
               <label>
                 <input
                   checked={false}
-                  name="liquidityWeight"
                   onChange={[Function]}
                   type="radio"
-                  value="0"
                 />
                 Volume 
               </label>

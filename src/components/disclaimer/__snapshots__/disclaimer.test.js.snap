@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <h3>
+    Disclaimer
+  </h3>
+  <p>
+    This website is for informational purposes only. This is not investment advice or an endorsement of any product or service. Index performance is hypothetical only. Data is not guaranteed to be accurate. We have no affiliation with Uniswap or any token listed on this site. Use this website at your own risk.
+  </p>
+</styled.div>
+`;

@@ -13,12 +13,6 @@ export default {
     normal: '400',
     bold: '700'
   },
-  space: {
-    small: '0.5rem',
-    medium: '1rem',
-    large: '2rem',
-    extraLarge: '4rem'
-  },
   color: {
     primary: '#2373CC',
     primaryLight: '#4989D3',
@@ -26,7 +20,6 @@ export default {
     surface: '#ffffff',
     error: '#B00020',
     onPrimary: '#FFFFFF',
-    onSecondary: '#000000',
     onBackground: '#000000',
     onSurface: '#000000',
     onError: '#FFFFFF',

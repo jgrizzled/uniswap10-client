@@ -19,7 +19,7 @@ exports[`renders as expected 1`] = `
 >
   <styled.div>
     <div
-      className="sc-AxiKw hgsICA"
+      className="sc-AxgMl XLHAb"
     >
       <styled.div>
         <div
@@ -32,6 +32,132 @@ exports[`renders as expected 1`] = `
               Historical Holdings
             </h2>
           </styled.h2>
+          <ChartTop
+            chartWindow={null}
+            setChartWindow={[Function]}
+          >
+            <styled.div>
+              <div
+                className="sc-AxiKw dthAkw"
+              >
+                <span />
+                <span>
+                  <WindowButton
+                    checked={true}
+                    onChange={[Function]}
+                  >
+                    <styled.label
+                      checked={true}
+                    >
+                      <label
+                        checked={true}
+                        className="sc-AxhUy jUBpCc"
+                      >
+                        <styled.input
+                          checked={true}
+                          onChange={[Function]}
+                        >
+                          <input
+                            checked={true}
+                            className="sc-AxhCb juCMVi"
+                            onChange={[Function]}
+                            type="radio"
+                          />
+                        </styled.input>
+                        <span>
+                          All
+                        </span>
+                      </label>
+                    </styled.label>
+                  </WindowButton>
+                  <WindowButton
+                    checked={false}
+                    onChange={[Function]}
+                  >
+                    <styled.label
+                      checked={false}
+                    >
+                      <label
+                        checked={false}
+                        className="sc-AxhUy gRAhDD"
+                      >
+                        <styled.input
+                          checked={false}
+                          onChange={[Function]}
+                        >
+                          <input
+                            checked={false}
+                            className="sc-AxhCb juCMVi"
+                            onChange={[Function]}
+                            type="radio"
+                          />
+                        </styled.input>
+                        <span>
+                          1y
+                        </span>
+                      </label>
+                    </styled.label>
+                  </WindowButton>
+                  <WindowButton
+                    checked={false}
+                    onChange={[Function]}
+                  >
+                    <styled.label
+                      checked={false}
+                    >
+                      <label
+                        checked={false}
+                        className="sc-AxhUy gRAhDD"
+                      >
+                        <styled.input
+                          checked={false}
+                          onChange={[Function]}
+                        >
+                          <input
+                            checked={false}
+                            className="sc-AxhCb juCMVi"
+                            onChange={[Function]}
+                            type="radio"
+                          />
+                        </styled.input>
+                        <span>
+                          3m
+                        </span>
+                      </label>
+                    </styled.label>
+                  </WindowButton>
+                  <WindowButton
+                    checked={false}
+                    onChange={[Function]}
+                  >
+                    <styled.label
+                      checked={false}
+                    >
+                      <label
+                        checked={false}
+                        className="sc-AxhUy gRAhDD"
+                      >
+                        <styled.input
+                          checked={false}
+                          onChange={[Function]}
+                        >
+                          <input
+                            checked={false}
+                            className="sc-AxhCb juCMVi"
+                            onChange={[Function]}
+                            type="radio"
+                          />
+                        </styled.input>
+                        <span>
+                          1m
+                        </span>
+                      </label>
+                    </styled.label>
+                  </WindowButton>
+                </span>
+              </div>
+            </styled.div>
+          </ChartTop>
           <ResponsiveContainer
             aspect={1.3636363636363635}
             debounce={0}

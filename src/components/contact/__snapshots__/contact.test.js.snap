@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.div>
+  <styled.h2>
+    Contact
+  </styled.h2>
+  <styled.div>
+    Made by Justin Greene
+    <ul>
+      <li>
+        <a
+          href="https://jgrizzled.github.io/portfolio"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/jgrizzled"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Github
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:justin.greene5@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Email
+        </a>
+      </li>
+    </ul>
+  </styled.div>
+</styled.div>
+`;

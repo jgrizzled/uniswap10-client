@@ -36,20 +36,16 @@ export default function Settings({ settings, setSettings }) {
             <label>
               <input
                 type='radio'
-                name='currency'
-                value='eth'
                 checked={currency === 'eth'}
-                onChange={e => setCurrency(e.target.value)}
+                onChange={() => setCurrency('eth')}
               />
               ETH&nbsp;
             </label>
             <label>
               <input
                 type='radio'
-                name='currency'
-                value='usd'
                 checked={currency === 'usd'}
-                onChange={e => setCurrency(e.target.value)}
+                onChange={() => setCurrency('usd')}
               />
               USD&nbsp;
             </label>
@@ -59,30 +55,32 @@ export default function Settings({ settings, setSettings }) {
             <label>
               <input
                 type='radio'
-                name='rebalancePeriod'
-                value='7'
-                checked={rebalancePeriod === '7'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                checked={rebalancePeriod === 1}
+                onChange={e => setRebalancePeriod(1)}
+              />
+              Daily&nbsp;
+            </label>
+            <label>
+              <input
+                type='radio'
+                checked={rebalancePeriod === 7}
+                onChange={e => setRebalancePeriod(7)}
               />
               Weekly&nbsp;
             </label>
             <label>
               <input
                 type='radio'
-                name='rebalancePeriod'
-                value='30'
-                checked={rebalancePeriod === '30'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                checked={rebalancePeriod === 30}
+                onChange={e => setRebalancePeriod(30)}
               />
               Monthly&nbsp;
             </label>
             <label>
               <input
                 type='radio'
-                name='rebalancePeriod'
-                value='90'
-                checked={rebalancePeriod === '90'}
-                onChange={e => setRebalancePeriod(e.target.value)}
+                checked={rebalancePeriod === 90}
+                onChange={e => setRebalancePeriod(90)}
               />
               Quarterly&nbsp;
             </label>
@@ -92,30 +90,24 @@ export default function Settings({ settings, setSettings }) {
             <label>
               <input
                 type='radio'
-                name='liquidityWeight'
-                value='1'
-                checked={liquidityWeight === '1'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                checked={liquidityWeight === 1}
+                onChange={e => setLiquidityWeight(1)}
               />
               Liquidity&nbsp;
             </label>
             <label>
               <input
                 type='radio'
-                name='liquidityWeight'
-                value='0.5'
-                checked={liquidityWeight === '0.5'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                checked={liquidityWeight === 0.5}
+                onChange={e => setLiquidityWeight(0.5)}
               />
               Liquidity and volume&nbsp;
             </label>
             <label>
               <input
                 type='radio'
-                name='liquidityWeight'
-                value='0'
-                checked={liquidityWeight === '0'}
-                onChange={e => setLiquidityWeight(e.target.value)}
+                checked={liquidityWeight === 0}
+                onChange={e => setLiquidityWeight(0)}
               />
               Volume&nbsp;
             </label>

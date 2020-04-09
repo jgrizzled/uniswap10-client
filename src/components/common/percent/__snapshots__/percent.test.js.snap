@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<styled.span
+  color="#74954F"
+>
+  +
+  100
+  %
+</styled.span>
+`;

@@ -1,6 +1,8 @@
 # Uniswap10 Client
 
-Front end for Uniswap10 - a customizeable index of liquid cryptoasets traded on [Uniswap](https://uniswap.io).
+Front end for Uniswap10 - a customizeable index of cryptocurrencies traded on [Uniswap](https://uniswap.io). Track the top cryptocurrencies on the most popular decentralized exchange.
+
+Uniswap10 is an index representing the hypothetical investment performance of a liquidity-weighted allocation strategy. Get broad exposure to the DeFi ecosystem by following market trends. Customize the strategy parameters to fit your trading style.
 
 <p align="center">
   <img src="https://github.com/jgrizzled/portfolio/raw/master/img/uniswap10-ss-desktop.png" width="350" alt="Uniswap10 screenshot">

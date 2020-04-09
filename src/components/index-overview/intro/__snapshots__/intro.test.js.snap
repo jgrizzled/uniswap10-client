@@ -18,9 +18,9 @@ exports[`renders as expected 1`] = `
   </div>
   <div>
     <h2>
-      Invest in liquid DeFi assets
+      Get broad exposure to the DeFi ecosystem
     </h2>
-    Tokens are ranked by market activity. 
+    Uniswap10 follows market activity trends. 
     <Link
       to="/faq"
     >

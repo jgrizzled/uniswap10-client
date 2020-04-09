@@ -42,6 +42,6 @@ export default function ChartTop({ children, chartWindow, setChartWindow }) {
 
 ChartTop.propTypes = {
   children: propTypes.node,
-  chartWindow: propTypes.number.isRequired,
-  setChartWindow: propTypes.func.isRequired,
+  chartWindow: propTypes.number,
+  setChartWindow: propTypes.func.isRequired
 };

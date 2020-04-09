@@ -1,6 +1,6 @@
-import Intro from '.';
+import Header from '.';
 
-const component = <Intro />;
+const component = <Header />;
 
 // smoke test
 it('renders without crashing', async () => {

@@ -1,6 +1,6 @@
-import Intro from '.';
+import Percent from '.';
 
-const component = <Intro />;
+const component = <Percent number={1} />;
 
 // smoke test
 it('renders without crashing', async () => {

@@ -1,6 +1,6 @@
-import Intro from '.';
+import SplashPage from '.';
 
-const component = <Intro />;
+const component = <SplashPage />;
 
 // smoke test
 it('renders without crashing', async () => {

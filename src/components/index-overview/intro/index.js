@@ -17,8 +17,8 @@ export default function Intro() {
         .
       </div>
       <div>
-        <h2>Invest in liquid DeFi assets</h2>
-        Tokens are ranked by market activity.&nbsp;
+        <h2>Get broad exposure to the DeFi ecosystem</h2>
+        Uniswap10 follows market activity trends.&nbsp;
         <Link to='/faq'>Learn more</Link>.
       </div>
       <div>
