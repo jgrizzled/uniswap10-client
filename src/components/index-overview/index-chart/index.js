@@ -62,7 +62,6 @@ export default function IndexChart({ indexByDate }) {
               tickMargin={isNotMobile ? 16 : 8}
               minTickGap={116}
               tickFormatter={tick => moment(tick).format('MMM DD')}
-              dataKey='date'
             />
             <YAxis
               hide={false}

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BurgerButton = styled.button`
   position: relative;
   top: 0.1rem;
-  left: 5vw;
+  left: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

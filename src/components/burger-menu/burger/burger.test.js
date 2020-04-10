@@ -5,7 +5,7 @@ const component = <Burger open={true} setOpen={jest.fn()} />;
 // smoke test
 it('renders without crashing', async () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Providers>component</Providers>, div);
+  ReactDOM.render(<Providers>{component}</Providers>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
