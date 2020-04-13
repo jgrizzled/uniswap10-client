@@ -1,6 +1,6 @@
 // index value chart
 
-import React, { useContext, useState, useRef } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import propTypes from 'prop-types';
 import styled, { ThemeContext } from 'styled-components';
 import { useLocation } from 'react-router-dom';
@@ -26,8 +26,10 @@ export default function IndexChart({ indexByDate }) {
   const [chartWindow, setChartWindow] = useState(null);
   const chartRef = useRef(null);
   const { hash } = useLocation();
-  const scrollToChart = () => chartRef.current.scrollIntoView();
-  if (hash === '#chart' && chartRef.current) scrollToChart();
+  useEffect(() => {
+    if (hash === '#chart' && chartRef.current)
+      chartRef.current.scrollIntoView();
+  }, [hash]);
   const windowedIndex = chartWindow
     ? indexByDate.slice(0 - chartWindow)
     : indexByDate;

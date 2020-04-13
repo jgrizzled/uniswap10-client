@@ -24,6 +24,7 @@ export default function App() {
   // fetch index data on new settings
   useEffect(() => {
     const fetchData = async () => {
+      setIndexData(false);
       try {
         const { indexByDate, holdingsByDate, tokens } = await fetchIndexData(
           indexSettings
