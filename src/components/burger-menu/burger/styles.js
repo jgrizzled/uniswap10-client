@@ -14,7 +14,7 @@ export const BurgerButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 1.5rem;
-  z-index: 1;
+  z-index: 2;
   font-size: 2rem;
   border-radius: 50%;
 
