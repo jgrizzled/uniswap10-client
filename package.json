@@ -14,7 +14,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "js-sha3": "^0.8.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "portfolio-tools": "desert-defi/portfolio-tools",
     "randomcolor": "^0.5.4",
